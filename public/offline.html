@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fafafa; --fg:#16161a; --muted:#5f6068; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f0f12; --fg:#ededf0; --muted:#a1a1aa; } }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); color:var(--fg);
+         font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans Armenian", sans-serif; padding:16px; }
+  p { color:var(--muted); line-height:1.6; margin:4px 0; }
+  button { margin-top:24px; min-height:48px; padding:0 28px; border:0; border-radius:999px; background:#4f46e5; color:#fff; font-size:16px; }
+</style>
+</head>
+<body>
+  <main>
+    <p lang="ru"><strong>Нет подключения к интернету.</strong> Проверьте соединение.</p>
+    <p lang="hy"><strong>Ինտերնետ կապ չկա։</strong> Ստուգեք կապը։</p>
+    <p lang="en"><strong>No internet connection.</strong> Check your connection.</p>
+    <button onclick="location.reload()">↻</button>
+  </main>
+</body>
+</html>

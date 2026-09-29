@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Lumina — AI photo generator and editor",
+    "description": "Upload your photos, pick a theme, and AI creates new shots in that style."
+  },
+  "nav": {
+    "home": "Home",
+    "create": "Create",
+    "gallery": "My photos",
+    "login": "Sign in",
+    "skipToContent": "Skip to content"
+  },
+  "header": {
+    "language": "Language",
+    "theme": "Color theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  },
+  "home": {
+    "hero": {
+      "title": "Your photos, anywhere you like",
+      "subtitle": "Upload a few photos of yourself, pick a theme, and AI creates new pictures while keeping your look.",
+      "cta": "Get started",
+      "note": "Free for friends and family"
+    },
+    "beforeAfter": {
+      "title": "Before and after",
+      "subtitle": "Drag the slider to compare the original photo with the result.",
+      "before": "Before",
+      "after": "After",
+      "sliderLabel": "Before and after comparison",
+      "placeholder": "Placeholder example. Real examples will appear once AI is connected."
+    },
+    "steps": {
+      "title": "How it works",
+      "upload": {
+        "title": "Upload photos",
+        "text": "One or more where your face is clearly visible. From a computer or straight from your phone camera."
+      },
+      "theme": {
+        "title": "Pick a theme",
+        "text": "Vacation, business portrait, holiday, or your own description."
+      },
+      "save": {
+        "title": "Edit and save",
+        "text": "Crop, adjust colors, and download one photo or all at once."
+      }
+    },
+    "themes": {
+      "title": "Themes",
+      "subtitle": "More themes are on the way."
+    },
+    "finalCta": {
+      "title": "Shall we try?",
+      "cta": "Get started"
+    }
+  },
+  "themes": {
+    "family": {
+      "title": "Family photoshoot",
+      "description": "Warm shots with the whole family"
+    },
+    "travel": {
+      "title": "Travel and vacation",
+      "description": "Beach, mountains, or city",
+      "variants": {
+        "beach": "Beach",
+        "mountains": "Mountains",
+        "city": "City"
+      }
+    },
+    "business": {
+      "title": "Business and work",
+      "description": "Business portrait and resume photo",
+      "variants": {
+        "portrait": "Business portrait",
+        "resume": "For resume and LinkedIn"
+      }
+    },
+    "holidays": {
+      "title": "Holidays",
+      "description": "New Year, birthday, wedding",
+      "variants": {
+        "newyear": "New Year",
+        "birthday": "Birthday",
+        "wedding": "Wedding"
+      }
+    },
+    "studio": {
+      "title": "Studio portrait",
+      "description": "Professional light and a clean backdrop"
+    },
+    "custom": {
+      "title": "Your own theme",
+      "description": "Describe the scene in your own words"
+    }
+  },
+  "create": {
+    "title": "Create photos",
+    "comingSoon": "This section arrives in the next stages: photo upload, theme selection, and generation.",
+    "back": "Back to home"
+  },
+  "gallery": {
+    "title": "My photos",
+    "comingSoon": "Your private gallery will live here. Photos are kept for 30 days."
+  },
+  "login": {
+    "title": "Sign in",
+    "comingSoon": "Email and Google sign-in arrive in stage 2."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  },
+  "footer": {
+    "privacy": "Only you can see your photos. They are deleted automatically after 30 days."
+  }
+}

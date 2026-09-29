@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Тёмная тема включается классом .dark на <html> (его ставит next-themes). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Цвета: нейтральная основа + один акцент. */
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --fg: #16161a;
+  --muted: #5f6068;
+  --subtle: #e7e7ea;
+  --accent: #4f46e5;
+  --accent-fg: #ffffff;
+}
+
+.dark {
+  --bg: #0f0f12;
+  --surface: #17171c;
+  --fg: #ededf0;
+  --muted: #a1a1aa;
+  --subtle: #2a2a31;
+  --accent: #8b87ff;
+  --accent-fg: #0f0f12;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  /* Сначала шрифт для латиницы и кириллицы, потом армянский. */
+  --font-sans: var(--font-inter), var(--font-armenian), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius-card: 1rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  overflow-wrap: break-word;
+  line-height: 1.15;
+}
+
+/* Капс плохо читается на армянском. */
+:lang(hy) .caps {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
