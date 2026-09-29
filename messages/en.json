@@ -8,7 +8,9 @@
     "create": "Create",
     "gallery": "My photos",
     "login": "Sign in",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "account": "Account",
+    "galleryShort": "My photos"
   },
   "header": {
     "language": "Language",
@@ -105,15 +107,62 @@
     "title": "My photos",
     "comingSoon": "Your private gallery will live here. Photos are kept for 30 days."
   },
-  "login": {
-    "title": "Sign in",
-    "comingSoon": "Email and Google sign-in arrive in stage 2."
-  },
   "notFound": {
     "title": "Page not found",
     "back": "Back to home"
   },
   "footer": {
     "privacy": "Only you can see your photos. They are deleted automatically after 30 days."
+  },
+  "auth": {
+    "signInTitle": "Sign in",
+    "signUpTitle": "Create account",
+    "resetTitle": "Reset password",
+    "resetText": "Enter your email and we will send you a link to set a new password.",
+    "newPasswordTitle": "New password",
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "New password",
+    "passwordHint": "At least 8 characters",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "sendReset": "Send link",
+    "savePassword": "Save password",
+    "google": "Continue with Google",
+    "or": "or",
+    "noAccount": "No account yet?",
+    "haveAccount": "Already have an account?",
+    "forgot": "Forgot password?",
+    "backToSignIn": "Back to sign in",
+    "checkEmail": "We sent an email to {email}. Open the link in it to continue.",
+    "passwordSaved": "Password saved.",
+    "notConfigured": "Sign-in is not set up yet. Supabase needs to be connected (see README).",
+    "loading": "Please wait…",
+    "errors": {
+      "invalid_credentials": "Wrong email or password.",
+      "email_not_confirmed": "Please confirm your email first: open the link we sent you.",
+      "user_already_exists": "This email is already registered. Try signing in.",
+      "weak_password": "The password is too weak. Use at least 8 characters.",
+      "passwordShort": "The password must be at least 8 characters.",
+      "rate_limit": "Too many attempts. Please wait a few minutes.",
+      "email_invalid": "Please check your email address.",
+      "same_password": "The new password must be different from the old one.",
+      "callback": "The link has expired or was already used. Please try again.",
+      "network": "Cannot reach the server. Check your internet connection.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "account": {
+    "title": "Account",
+    "signedInAs": "Signed in as",
+    "changePassword": "Change password",
+    "signOut": "Sign out",
+    "deleteTitle": "Delete account",
+    "deleteText": "Your account and all uploaded and generated photos will be deleted forever.",
+    "deleteButton": "Delete account",
+    "deleteConfirm": "Are you sure? This cannot be undone.",
+    "deleteFinal": "Yes, delete everything",
+    "deleteCancel": "Cancel",
+    "deleteError": "Could not delete the account. Please try again later."
   }
 }

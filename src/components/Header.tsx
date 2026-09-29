@@ -1,4 +1,5 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { getCurrentUser } from "@/lib/supabase/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@config/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -6,8 +7,11 @@ import { ThemeToggle } from "./ThemeToggle";
 import { MobileNav } from "./MobileNav";
 import { UserIcon } from "./icons";
 
-export function Header() {
-  const t = useTranslations("nav");
+export async function Header() {
+  const t = await getTranslations("nav");
+  const user = await getCurrentUser();
+  const accountHref = user ? "/account" : "/login";
+  const accountLabel = user ? t("account") : t("login");
 
   return (
     <>
@@ -30,17 +34,17 @@ export function Header() {
             <LanguageSwitcher />
             <ThemeToggle />
             <Link
-              href="/login"
-              aria-label={t("login")}
+              href={accountHref}
+              aria-label={accountLabel}
               className="grid size-11 place-items-center rounded-full text-muted transition-colors hover:bg-subtle hover:text-fg sm:hidden"
             >
               <UserIcon />
             </Link>
             <Link
-              href="/login"
+              href={accountHref}
               className="hidden rounded-full border border-subtle px-4 py-2 text-sm transition-colors hover:border-fg/30 sm:inline-block"
             >
-              {t("login")}
+              {accountLabel}
             </Link>
           </div>
         </div>

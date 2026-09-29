@@ -12,7 +12,7 @@ export function MobileNav() {
   const items = [
     { href: "/", label: t("home"), Icon: HomeIcon },
     { href: "/create", label: t("create"), Icon: SparkleIcon },
-    { href: "/gallery", label: t("gallery"), Icon: ImagesIcon },
+    { href: "/gallery", label: t("galleryShort"), Icon: ImagesIcon },
   ] as const;
 
   return (
